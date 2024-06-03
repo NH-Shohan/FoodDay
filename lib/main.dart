@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'FoodDay',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xffffffff)),
-        scaffoldBackgroundColor: const Color(0xffffffff),
+        scaffoldBackgroundColor: const Color(0xFFF5F5F5),
         useMaterial3: true,
       ),
       home: const WelcomeOne(),

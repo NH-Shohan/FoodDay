@@ -9,10 +9,10 @@ class AccountType extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFFF5F5F5),
         title: const Image(
           image: AssetImage('assets/images/logo.png'),
-          width: 220,
+          width: 180,
         ),
       ),
       body: Padding(

@@ -19,7 +19,7 @@ class WelcomeFour extends StatelessWidget {
           ),
           const Image(
             image: AssetImage('assets/images/logo.png'),
-            width: 220,
+            width: 180,
           ),
           const SizedBox(
             height: 80,

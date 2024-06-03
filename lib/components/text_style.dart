@@ -55,3 +55,33 @@ class Body extends StatelessWidget {
     );
   }
 }
+
+class Small extends StatelessWidget {
+  final String? text;
+  final bool center;
+  final TextStyle? textStyle;
+
+  const Small({super.key, this.text, this.center = false, this.textStyle});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text!,
+      style: const TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.0,
+        color: Color(0xff888888),
+      ).copyWith(
+        fontSize: textStyle?.fontSize,
+        fontWeight: textStyle?.fontWeight,
+        letterSpacing: textStyle?.letterSpacing,
+        color: textStyle?.color,
+        fontFamily: textStyle?.fontFamily,
+        backgroundColor: textStyle?.backgroundColor,
+        decoration: textStyle?.decoration ?? TextDecoration.none,
+      ),
+      textAlign: center ? TextAlign.center : TextAlign.left,
+    );
+  }
+}

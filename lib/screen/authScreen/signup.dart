@@ -4,16 +4,16 @@ import 'package:foodday/components/input.dart';
 import 'package:foodday/components/termsAndConditions.dart';
 import 'package:foodday/components/text_style.dart';
 import 'package:foodday/screen/authScreen/accountType.dart';
-import 'package:foodday/screen/authScreen/signup.dart';
+import 'package:foodday/screen/authScreen/signin.dart';
 
-class SignIn extends StatefulWidget {
-  const SignIn({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  _SignInState createState() => _SignInState();
+  _SignUpState createState() => _SignUpState();
 }
 
-class _SignInState extends State<SignIn> {
+class _SignUpState extends State<SignUp> {
   final phoneController = TextEditingController();
   String? phoneNumber;
 
@@ -126,11 +126,11 @@ class _SignInState extends State<SignIn> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const SignUp()),
+                      MaterialPageRoute(builder: (context) => const SignIn()),
                     );
                   },
                   child: const Text(
-                    "Sign Up",
+                    "Sign In",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
